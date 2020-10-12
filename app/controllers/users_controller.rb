@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     def index
         users = User.all 
-        render json: users, except: [:created_at, :updated_at]
+        render json: users, except: [:created_at, :updated_at], methods:[:my_comments]
     end
 
     def show
@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
 private
     def user_params
-        params.require(:user).permit(:username, :password, :photoImg)
+        params.require(:user).permit(:username, :password, :photoImg, :last_name, :first_name)
     end
 
 end

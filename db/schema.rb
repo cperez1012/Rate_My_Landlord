@@ -10,16 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_08_181350) do
+ActiveRecord::Schema.define(version: 2020_10_12_211554) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "apartments", force: :cascade do |t|
-    t.string "address"
     t.string "photoImg"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "street_number"
+    t.string "street_name"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.integer "zipcode"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -39,6 +44,8 @@ ActiveRecord::Schema.define(version: 2020_10_08_181350) do
     t.string "photoImg"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "first_name"
+    t.string "last_name"
   end
 
   add_foreign_key "comments", "apartments"
