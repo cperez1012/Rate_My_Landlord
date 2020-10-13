@@ -12,6 +12,13 @@ class Apartment < ApplicationRecord
     end
 
     def all_comments
-        comments
+        collection = comments.map do |comment| 
+
+            comment = {:username => comment.user.username, :review => comment}
+            
+         
+        end
+        return collection
     end
+
 end

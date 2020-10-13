@@ -7,7 +7,7 @@ class ApartmentsController < ApplicationController
 
     def show
         apartment = Apartment.find(params[:id])
-        render json: apartment, except: [:created_at, :updated_at], methods: [:avgScore, :full_address, :all_comments]
+        render json: apartment, except: [:created_at, :updated_at], methods: [:avgScore, :full_address, :all_comments,]
     end
 
     def create
