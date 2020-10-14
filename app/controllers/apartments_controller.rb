@@ -28,6 +28,6 @@ class ApartmentsController < ApplicationController
 
     private
     def param_settings
-        params.require(:apartment).permit(:address, :photoImg)
+        params.require(:apartment).permit(:street_number, :street_name, :city, :state, :zipcode, :country, :photoImg)
     end
 end

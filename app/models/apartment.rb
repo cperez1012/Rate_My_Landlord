@@ -3,6 +3,7 @@ class Apartment < ApplicationRecord
     has_many :users, through: :comments
 
     # validates :street_number, uniqueness: {scope: :stree_name}
+    
 
     def avgScore
         return 0 unless comments.count.positive?
