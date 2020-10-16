@@ -2,12 +2,12 @@ class ApartmentsController < ApplicationController
 
     def index
         apartments = Apartment.all
-        render json: apartments, except: [:created_at, :updated_at], methods: [:avgScore, :full_address, :all_comments]
+        render json: apartments, except: [:created_at, :updated_at], methods: [:avgScore, :full_address, :all_comments, :avgScore_noise, :avgScore_staff, :avgScore_safety, :avgScore_maintenance, :avgScore_appearance]
     end
 
     def show
         apartment = Apartment.find(params[:id])
-        render json: apartment, except: [:created_at, :updated_at], methods: [:avgScore, :full_address, :all_comments,]
+        render json: apartment, except: [:created_at, :updated_at], methods: [:avgScore, :full_address, :all_comments, :avgScore_noise, :avgScore_staff, :avgScore_safety, :avgScore_maintenance, :avgScore_appearance]
     end
 
     def create

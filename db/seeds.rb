@@ -22,7 +22,7 @@ Apartment.create(street_number: 1793, street_name: "Amsterdam Avenue", city: "Ne
 end
 
 5.times do
-Comment.create(message: "This is a great place!", rating: 5, user_id: User.all.sample.id, apartment_id: Apartment.all.sample.id)
-Comment.create(message: "Terrible place!", rating: 1, user_id: User.all.sample.id, apartment_id: Apartment.all.sample.id)
-Comment.create(message: "This is a an ok place", rating: 3, user_id: User.all.sample.id, apartment_id: Apartment.all.sample.id)
+Comment.create(message: "This is a great place!", rating: rand(1..5), rating_noise: rand(1..5), rating_appearance: rand(1..5), rating_safety: rand(1..5), rating_staff: rand(1..5), rating_maintenance: rand(1..5), user_id: User.all.sample.id, apartment_id: Apartment.all.sample.id)
+Comment.create(message: "Terrible place!", rating: rand(1..5), rating_noise: rand(1..5), rating_appearance: rand(1..5), rating_safety: rand(1..5), rating_staff: rand(1..5), rating_maintenance: rand(1..5), user_id: User.all.sample.id, apartment_id: Apartment.all.sample.id)
+Comment.create(message: "This is a an ok place", rating: rand(1..5), rating_noise: rand(1..5), rating_appearance: rand(1..5), rating_safety: rand(1..5), rating_staff: rand(1..5), rating_maintenance: rand(1..5), user_id: User.all.sample.id, apartment_id: Apartment.all.sample.id)
 end
