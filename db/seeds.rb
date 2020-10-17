@@ -16,9 +16,9 @@ User.create(username: 'Snowboarder85', password: '789', first_name: 'Jordan', la
 User.create(username: 'JeepAllTheWay', password: '987', first_name: 'Chelsea', last_name: 'Ritz-Kirsch')
 
 
-Apartment.create(street_number: 1, street_name: "River Place", city: "New York", state: "NY", zipcode: 10036, country: "USA", photoImg: "https://cdngeneral.rentcafe.com/dmslivecafe/3/228633/11-Waverly-Place--Front_WEB.jpg?crop=(0,0,300,225)&cropxunits=300&cropyunits=225&width=350")
-Apartment.create(street_number: 415, street_name: "West 57th street", city: "New York", state: "NY", zipcode: 10031, country: "USA", photoImg: "https://media.guestofaguest.com/t_article_content/gofg-media/2019/01/1/51893/49933486_107361643707543_4299262240395492308_n.jpg")
-Apartment.create(street_number: 1793, street_name: "Amsterdam Avenue", city: "New York", state: "NY", zipcode: 10031, country: "USA", photoImg: "https://mymagicearth.com/wp-content/uploads/2019/04/Mormandie-Apartments_1.jpg")
+# Apartment.create(street_number: 1, street_name: "River Place", city: "New York", state: "NY", zipcode: 10036, country: "USA", photoImg: "https://cdngeneral.rentcafe.com/dmslivecafe/3/228633/11-Waverly-Place--Front_WEB.jpg?crop=(0,0,300,225)&cropxunits=300&cropyunits=225&width=350")
+# Apartment.create(street_number: 415, street_name: "West 57th street", city: "New York", state: "NY", zipcode: 10031, country: "USA", photoImg: "https://media.guestofaguest.com/t_article_content/gofg-media/2019/01/1/51893/49933486_107361643707543_4299262240395492308_n.jpg")
+# Apartment.create(street_number: 1793, street_name: "Amsterdam Avenue", city: "New York", state: "NY", zipcode: 10031, country: "USA", photoImg: "https://mymagicearth.com/wp-content/uploads/2019/04/Mormandie-Apartments_1.jpg")
 
 
 

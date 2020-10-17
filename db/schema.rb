@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_16_165245) do
+ActiveRecord::Schema.define(version: 2020_10_17_180812) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2020_10_16_165245) do
     t.string "state"
     t.string "country"
     t.integer "zipcode"
+    t.float "lat"
+    t.float "lng"
   end
 
   create_table "comments", force: :cascade do |t|
