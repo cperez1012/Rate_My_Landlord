@@ -8,7 +8,7 @@ class User < ApplicationRecord
     def my_comments
         collection = comments.map do |comment| 
 
-            comment = {:apartmentImg => comment.apartment.photoImg, :review => comment}
+            comment = {:apartmentImg => comment.apartment.photoImg, :review => comment, :full_address => comment.apartment.full_address }
         end
     end
 end
