@@ -9,10 +9,10 @@
 # User.destroy_all
 # Comment.destroy_all
 
-# User.create(username: 'DJK', password: '123', first_name: 'David', last_name: 'Kirsch')
-# User.create(username: 'Roy_nyc', password: '321', first_name: 'Roy', last_name: 'Flores')
-# User.create(username: 'Snowboarder85', password: '789', first_name: 'Jordan', last_name: 'Kirsch')
-# User.create(username: 'JeepAllTheWay', password: '987', first_name: 'Chelsea', last_name: 'Ritz-Kirsch')
+User.create(username: 'DJK', password: '123', first_name: 'David', last_name: 'Kirsch')
+User.create(username: 'Roy_nyc', password: '321', first_name: 'Roy', last_name: 'Flores')
+User.create(username: 'Snowboarder85', password: '789', first_name: 'Jordan', last_name: 'Kirsch')
+User.create(username: 'JeepAllTheWay', password: '987', first_name: 'Chelsea', last_name: 'Ritz-Kirsch')
 
 
 # Apartment.create(street_number: 1, street_name: "River Place", city: "New York", state: "NY", zipcode: 10036, country: "USA", photoImg: "https://cdngeneral.rentcafe.com/dmslivecafe/3/228633/11-Waverly-Place--Front_WEB.jpg?crop=(0,0,300,225)&cropxunits=300&cropyunits=225&width=350")
