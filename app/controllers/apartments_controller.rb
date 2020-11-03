@@ -31,3 +31,4 @@ class ApartmentsController < ApplicationController
         params.require(:apartment).permit(:street_number, :street_name, :city, :state, :zipcode, :country, :photoImg, :lat, :lng, :verified)
     end
 end
+
