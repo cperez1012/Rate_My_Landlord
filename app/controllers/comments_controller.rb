@@ -27,6 +27,6 @@ class CommentsController < ApplicationController
 
     private
     def param_settings
-        params.require(:comment).permit(:user_id, :apartment_id, :message, :rating, :rating_noise, :rating_safety, :rating_appearance, :rating_staff, :rating_maintenance)
+        params.require(:comment).permit(:user_id, :apartment_id, :message, :rating, :rating_noise, :rating_safety, :rating_appearance, :rating_staff, :rating_maintenance, :verified)
     end
 end

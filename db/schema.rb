@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_17_180812) do
+ActiveRecord::Schema.define(version: 2020_11_03_042127) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_10_17_180812) do
     t.integer "rating_safety"
     t.integer "rating_staff"
     t.integer "rating_maintenance"
+    t.boolean "verified"
     t.index ["apartment_id"], name: "index_comments_on_apartment_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
